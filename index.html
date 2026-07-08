@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sridevi S — AI Full Stack Developer &amp; Digital Marketer</title>
+<meta name="description" content="Portfolio of Sridevi S — AI Full Stack Developer, SEO Specialist, Digital Marketer. B.Sc Computer Science graduate building AI-powered digital products.">
+<meta name="theme-color" content="#0b0714">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+
+<!-- Loading Screen -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">Sridevi's Portfolio
+  </div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- Particle Background (plain canvas, no images) -->
+<canvas id="particles" aria-hidden="true"></canvas>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">Sri</span>
+      <span class="logo-text">Sridevi<span class="accent"> S</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#certifications" class="nav-link">Certifications</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="btn btn-ghost btn-sm" type="button" aria-label="Toggle light and dark theme">
+        <span id="themeToggleLabel">Light Mode</span>
+      </button>
+      <a href="https://github.com/sridevis7" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+      <a href="https://www.linkedin.com/in/sridevi-s-b07b503a7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1-LxtWzUSY7s0PaZlVipKoxSV8lc69zWV/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Resume</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#education" class="nav-link">Education</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#experience" class="nav-link">Experience</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <div class="mobile-actions">
+      <a href="https://github.com/sridevis7" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+      <a href="https://www.linkedin.com/in/sridevi-s-b07b503a7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/1-LxtWzUSY7s0PaZlVipKoxSV8lc69zWV/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-gold btn-sm">Resume</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy reveal-up">
+      <p class="eyebrow"><span class="dot"></span>Available for remote opportunities</p>
+      <h1 class="hero-title">
+        Hello, this is <span class="grad-text">SRIDEVI S</span>
+      </h1>
+      <h2 class="hero-role">
+        <span id="typedRole"></span><span class="type-cursor">|</span>
+      </h2>
+      <p class="hero-desc">
+        Passionate about building AI-powered digital products, creating impactful social media strategies, and helping brands grow with technology.
+      </p>
+      <div class="hero-actions">
+        <a href="https://drive.google.com/file/d/1-LxtWzUSY7s0PaZlVipKoxSV8lc69zWV/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-gold">Download Resume</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Internships</span></div>
+        <div class="stat"><span class="stat-num">5+</span><span class="stat-label">Certifications</span></div>
+        <div class="stat"><span class="stat-num">81.8%</span><span class="stat-label">B.Sc Computer Science Percentage
+        </span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up" style="--delay:.15s">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="code-card">
+        <div class="code-card-bar">
+          <span class="code-dot dot-a"></span><span class="code-dot dot-b"></span><span class="code-dot dot-c"></span>
+          <span class="code-card-title">profile.json</span>
+        </div>
+        <pre class="code-card-body"><span class="code-key">"name"</span>: <span class="code-str">"Sridevi S"</span>,
+<span class="code-key">"role"</span>: <span class="code-str">"AI Full Stack Developer"</span>,
+<span class="code-key">"stack"</span>: [<span class="code-str">"React"</span>, <span class="code-str">"Node.js"</span>, <span class="code-str">"Python"</span>],
+<span class="code-key">"focus"</span>: [<span class="code-str">"AI"</span>, <span class="code-str">"SEO"</span>, <span class="code-str">"Growth"</span>],
+<span class="code-key">"status"</span>: <span class="code-str">"Building Sris Skill Academy"</span></pre>
+      </div>
+      <div class="floating-badge badge-1">AI Developer</div>
+      <div class="floating-badge badge-2">Digital Marketer</div>
+      <div class="floating-badge badge-3">Full Stack</div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue">
+    <span></span> Scroll
+  </a>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">About</p>
+    <h2 class="section-title reveal-up">The person behind the code</h2>
+
+    <div class="about-grid">
+      <div class="about-card glass reveal-up">
+        <p class="about-text">
+          I am <strong>Sridevi S</strong>, a B.Sc Computer Science graduate and aspiring <strong>AI Full Stack Developer</strong> from Vriddhachalam, Tamil Nadu. I specialize in web development, AI applications, SEO, social media management, and digital marketing.
+        </p>
+        <p class="about-text">
+          My goal is to build innovative digital solutions and grow my own brand, <span class="grad-text">Sris Skill Academy</span>.
+        </p>
+        <a href="https://drive.google.com/file/d/1-LxtWzUSY7s0PaZlVipKoxSV8lc69zWV/view?usp=drivesdk" target="_blank" rel="noopener" class="btn btn-gold">View Resume</a>
+      </div>
+
+      <div class="about-facts reveal-up" style="--delay:.1s">
+        <div class="fact-card glass">
+          <span class="fact-label">Location</span>
+          <p>Vriddhachalam, Tamil Nadu</p>
+        </div>
+        <div class="fact-card glass">
+          <span class="fact-label">Education</span>
+          <p>B.Sc Computer Science</p>
+        </div>
+        <div class="fact-card glass">
+          <span class="fact-label">Focus</span>
+          <p>AI · Web · SEO · Marketing</p>
+        </div>
+        <div class="fact-card glass">
+          <span class="fact-label">Building</span>
+          <p>Sris Skill Academy</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section alt">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Skills</p>
+    <h2 class="section-title reveal-up">What I bring to the table</h2>
+
+    <h3 class="subgroup-title reveal-up">Soft Skills</h3>
+    <div class="skills-grid soft reveal-up">
+      <div class="skill-chip">Communication</div>
+      <div class="skill-chip">Problem Solving</div>
+      <div class="skill-chip">Team Coordination &amp; Management</div>
+      <div class="skill-chip">Adaptability</div>
+      <div class="skill-chip">Time Management</div>
+      <div class="skill-chip">Quick Learning</div>
+      <div class="skill-chip">Debugging</div>
+      <div class="skill-chip">Testing</div>
+      <div class="skill-chip">API Integration</div>
+    </div>
+
+    <h3 class="subgroup-title reveal-up">Frontend</h3>
+    <div class="skills-grid reveal-up">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">React.js</div>
+      <div class="skill-card">Tailwind CSS</div>
+    </div>
+
+    <h3 class="subgroup-title reveal-up">Backend</h3>
+    <div class="skills-grid reveal-up">
+      <div class="skill-card">Python</div>
+      <div class="skill-card">Node.js</div>
+      <div class="skill-card">Express.js</div>
+      <div class="skill-card">Java</div>
+    </div>
+
+    <h3 class="subgroup-title reveal-up">Database</h3>
+    <div class="skills-grid reveal-up">
+      <div class="skill-card">MySQL</div>
+      <div class="skill-card">MongoDB</div>
+      <div class="skill-card">Oracle Database</div>
+    </div>
+
+    <h3 class="subgroup-title reveal-up">Tools &amp; Technology</h3>
+    <div class="skills-grid reveal-up">
+      <div class="skill-card">Git</div>
+      <div class="skill-card">GitHub</div>
+      <div class="skill-card">TensorFlow</div>
+      <div class="skill-card">Figma</div>
+      <div class="skill-card">PyTorch</div>
+      <div class="skill-card">Scikit-learn</div>
+      <div class="skill-card">OpenCV</div>
+      <div class="skill-card">Claude</div>
+      <div class="skill-card">Chatgpt</div>
+      <div class="skill-card">Gemini</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="section">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Education</p>
+    <h2 class="section-title reveal-up">Academic timeline</h2>
+
+    <div class="timeline">
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-year">2026-2028</span>
+          <h3>M.Sc Computer Science</h3>
+          <p class="timeline-org">TKGAC, Vriddhachalam</p>
+          <span class="timeline-score">loading...</span>
+        </div>
+
+    <div class="timeline">
+      <div class="timeline-item reveal-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-year">2023-2026</span>
+          <h3>B.Sc Computer Science</h3>
+          <p class="timeline-org">TKGAC, Vriddhachalam</p>
+          <span class="timeline-score">81.8%</span>
+        </div>
+      </div>
+      <div class="timeline-item reveal-up" style="--delay:.12s">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card glass">
+          <span class="timeline-year">2022-2023</span>
+          <h3>12th Standard</h3>
+          <p class="timeline-org">GGMHSS, Vriddhachalam</p>
+          <span class="timeline-score">76%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section alt">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Projects</p>
+    <h2 class="section-title reveal-up">Things I've built</h2>
+
+    <div class="projects-grid">
+      <article class="project-card glass reveal-up">
+        <div class="project-thumb">Grievance Platform</div>
+        <div class="project-body">
+          <h3>Digital Platform for Grievance Filing and Tracking</h3>
+          <p>A platform to file and track grievances end-to-end, built with a Java backend and MySQL storage for reliable record-keeping.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Bootstrap</span><span class="tag">Java Servlet</span><span class="tag">Java</span><span class="tag">MySQL</span>
+          </div>
+          <div class="project-actions">
+            <a href="https://sridevis7.github.io/DigitalGrievanceWeb/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Demo</a>
+            <a href="https://github.com/sridevis7/DigitalGrievanceWeb" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card glass reveal-up" style="--delay:.12s">
+        <div class="project-thumb">StyleHub</div>
+        <div class="project-body">
+          <h3>StyleHub — AI Clothing E-commerce Website</h3>
+          <p>An AI-powered fashion storefront with visual search, a conversational shopping assistant, and a full admin &amp; order management dashboard.</p>
+          <div class="tag-row">
+            <span class="tag">React.js</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Express.js</span><span class="tag">Node.js</span><span class="tag">MongoDB</span>
+          </div>
+          <ul class="feature-list">
+            <li>AI Chatbot</li>
+            <li>Visual Search</li>
+            <li>Admin Dashboard</li>
+            <li>Order Management System</li>
+          </ul>
+          <div class="project-actions">
+            <a href="https://ecomwebsite-j4zc.vercel.app/" target="_blank" rel="noopener" class="btn btn-outline btn-sm">Live Deployment</a>
+            <a href="https://github.com/sridevis7/ecomwebsite" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Experience</p>
+    <h2 class="section-title reveal-up">Where I've worked</h2>
+
+    <div class="roadmap">
+      <div class="roadmap-line" aria-hidden="true"></div>
+
+      <div class="roadmap-item reveal-up">
+        <div class="roadmap-node">1</div>
+        <div class="roadmap-card glass">
+          <span class="timeline-year">May 2025</span>
+          <h3>Website Development Intern</h3>
+          <p class="timeline-org">Macx Technology, Cuddalore</p>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+      </div>
+
+      <div class="roadmap-item reveal-up" style="--delay:.12s">
+        <div class="roadmap-node">2</div>
+        <div class="roadmap-card glass">
+          <span class="timeline-year">Feb 2026 – Jul 2026</span>
+          <h3>Software Development Intern</h3>
+          <p class="timeline-org">JP Software Solutions, Vriddhachalam</p>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="section alt">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Certifications</p>
+    <h2 class="section-title reveal-up">Verified learning</h2>
+
+    <div class="cert-slider-wrap reveal-up">
+      <button class="cert-nav prev" id="certPrev" aria-label="Previous certificate">&larr;</button>
+
+      <div class="cert-slider" id="certSlider">
+        <div class="cert-card glass">
+          <h3> Python for Datascience</h3>
+          <p class="timeline-org">Infosys Springboard</p>
+          <a href="https://drive.google.com/file/d/1yNtCRofTw4-_CfA1HhxabbY660FwDXkh/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+        <div class="cert-card glass">
+          <h3>Introduction to Datascience</h3>
+          <p class="timeline-org">Infosys Springboard</p>
+          <a href="https://drive.google.com/file/d/1i8GT6scDr5ZHNy5-toM5NcV0NkyshK4N/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+        <div class="cert-card glass">
+          <h3>Oracle Database System</h3>
+          <p class="timeline-org">Oracle E-learning</p>
+          <a href="https://drive.google.com/file/d/1oN6vfNVKN57LYjIGzAuOZcii3OFscuEA/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+        <div class="cert-card glass">
+          <h3>English Communication</h3>
+          <p class="timeline-org">TNSDC</p>
+          <a href="https://drive.google.com/file/d/1aJ969bbttppgMdWYti2b4i3f26wK4JHL/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+        <div class="cert-card glass">
+          <h3>Artificial Intelligence Master Course</h3>
+          <p class="timeline-org">Novi Tech Pvt Ltd</p>
+          <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-sm">View Certificate</a>
+        </div>
+      </div>
+
+      <button class="cert-nav next" id="certNext" aria-label="Next certificate">&rarr;</button>
+    </div>
+    <div class="cert-dots" id="certDots"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="section-inner">
+    <p class="eyebrow reveal-up">Contact</p>
+    <h2 class="section-title reveal-up">Let's build something together</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <p class="contact-lead">Have a project in mind, an internship opening, or just want to say hi? My inbox is open.</p>
+        <a href="mailto:sridevisris187@gmail.com" class="contact-email">sridevisris187@gmail.com</a>
+        <div class="social-row">
+          <a href="https://github.com/sridevis7" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+          <a href="https://www.linkedin.com/in/sridevi-s-b07b503a7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">LinkedIn</a>
+          <a href="mailto:sridevisris187@gmail.com" class="btn btn-ghost btn-sm">Email</a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form glass reveal-up" style="--delay:.1s">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="user_name" required placeholder="Your full name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="user_email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-full" id="sendBtn">
+          <span>Send Message</span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">SS</span>
+      <p>Building AI-powered digital products &amp; growing brands through technology.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Get in touch</h4>
+      <a href="mailto:sridevisris187@gmail.com">sridevisris187@gmail.com</a>
+      <div class="social-row">
+        <a href="https://github.com/sridevis7" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/sridevi-s-b07b503a7?utm_source=share_via&amp;utm_content=profile&amp;utm_medium=member_android" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Sridevi S. All rights reserved.</p>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">Top</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
